@@ -1,0 +1,44 @@
+.main-social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 16px;
+    list-style-type: none;
+  }
+  
+  .social {
+    margin-right: 10px;
+
+    
+  }
+  
+  .social-icons {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    color:$border-color;
+    transition: all 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .main-social &:hover,
+    .main-social &:focus {
+    background-color:$accent-color;
+    outline-color:$accent-color;
+    color: $primary-white-color;
+  }
+  }
+  
+  .social-list-svg {
+    display: block;
+    fill: currentColor;
+    border-radius:50%;
+    transition: all 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: $primary-white-color;
+      background-color: $accent-color;
+    }
+    &:focus {
+      outline-color: $accent-color;
+    }
+  }

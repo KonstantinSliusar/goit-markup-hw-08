@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+    
+ }
+ 
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+ 
+ 
+ body {
+   font-style: normal;
+   margin: 0;
+   
+ }
+
+ .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }

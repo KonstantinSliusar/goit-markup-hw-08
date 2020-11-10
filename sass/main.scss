@@ -1,0 +1,31 @@
+// utils //
+@import"./utils/variables";
+@import"./utils/visually-hidden";
+@import"./utils/visible";
+
+// base //
+@import"./base/common";
+@import"./base/container.scss";
+
+
+//  components //
+@import"./components/modal";
+@import"./components/social-icons";
+@import"./components/button";
+@import"./components/title";
+@import"./components/modal-header";
+
+
+
+// layout //
+@import"./layout/header";
+@import"./layout/hero";
+@import"./layout/text-list";
+@import"./layout/photo-content";
+@import"./layout/section-content";
+@import"./layout/prefooter-icons";
+@import"./layout/footer";
+@import"./layout/portfolio-main";
+
+
+

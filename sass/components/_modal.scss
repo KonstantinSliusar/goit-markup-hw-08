@@ -1,0 +1,447 @@
+@media screen and (max-width: 479px) {
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.2);
+    transition: all 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    background: $primary-white-color;
+    transition: all 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-image:url("../images/svg/close(2).svg");
+    border: none;
+    background-color: $primary-white-color;
+    cursor: pointer;
+    &:focus {
+      outline-color: $accent-color;
+    }
+  }
+  
+  .modal-caption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.150;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    &-field {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.01em;
+      color: $second-color;
+      margin-bottom: 10px;
+    }
+    &-input {
+      display: block;
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      width: 100%;
+      padding-left: 42px;
+      &:focus {
+      outline:none;
+      border: 1px solid $accent-color;
+    }
+    &-wrapper {
+      display: block;
+      position: relative;
+      margin-top: 4px;
+    }
+  
+    }
+    &-message {
+      height: 120px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      resize: none;
+      margin-bottom: 25px;
+      width: 100%;
+    
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.01em;
+      padding-top: 12px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      margin-top: 4px;
+      &:focus {
+        outline:none;
+        border: 1px solid $accent-color;
+      }
+    }
+    &-btn {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      color: $primary-white-color;
+      margin: 0 auto;
+      
+      width: 200px;
+      height: 50px;
+      left: 700px;
+      top: 712px;
+    
+      background: $accent-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border:none;
+      transition: all 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus {
+        outline-color: $accent-color;
+      }
+    }
+    &-svg-icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      .modal-form-input:focus + & {
+        fill: $accent-color;
+      }
+    }
+    &-policy {
+      margin: 0;
+    }
+
+    &-policy-label {
+      margin-bottom: 30px;
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 1px solid $primary-text-color;
+        margin-right: 8px;
+      
+      }
+      .modal-form-policy:checked + &::before {
+        background-color: $accent-color;
+        background-image: url("../images/svg/submit-icon.svg");
+        border: 0.2px solid $primary-white-color;
+        border-radius: 2px;
+        background-repeat: round;
+        
+      }
+      .modal-form-policy:checked + &:hover {
+        outline-color: $accent-color;
+      }
+    }
+  }
+  
+  .modal-bottom-accept {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: $second-color;
+  
+  }
+  
+  .bottom-policy {
+    color: $accent-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    &:focus {
+      outline-color: $accent-color;
+    }
+  }
+  
+  .visible {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.2);
+    transition: all 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+    height: 609px;
+    background: $primary-white-color;
+    transition: all 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-image:url("../images/svg/close(2).svg");
+    border: none;
+    background-color: $primary-white-color;
+    cursor: pointer;
+    &:focus {
+      outline-color: $accent-color;
+    }
+  }
+  
+  .modal-caption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.150;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    &-field {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.01em;
+      color: $second-color;
+      margin-bottom: 10px;
+    }
+    &-input {
+      display: block;
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      width: 100%;
+      padding-left: 42px;
+      &:focus {
+      outline:none;
+      border: 1px solid $accent-color;
+    }
+    &-wrapper {
+      display: block;
+      position: relative;
+      margin-top: 4px;
+    }
+  
+    }
+    &-message {
+      height: 120px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      resize: none;
+      margin-bottom: 25px;
+      width: 100%;
+    
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.01em;
+      padding-top: 12px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      margin-top: 4px;
+      &:focus {
+        outline:none;
+        border: 1px solid $accent-color;
+      }
+    }
+    &-btn {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      color: $primary-white-color;
+      margin: 0 auto;
+      
+      width: 200px;
+      height: 50px;
+      left: 700px;
+      top: 712px;
+    
+      background: $accent-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border:none;
+      transition: all 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus {
+        outline-color: $accent-color;
+      }
+    }
+    &-svg-icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      .modal-form-input:focus + & {
+        fill: $accent-color;
+      }
+    }
+    &-policy {
+      margin: 0;
+    }
+
+    &-policy-label {
+      margin-bottom: 30px;
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 1px solid $primary-text-color;
+        margin-right: 8px;
+      
+      }
+      .modal-form-policy:checked + &::before {
+        background-color: $accent-color;
+        background-image: url("../images/svg/submit-icon.svg");
+        border: 0.2px solid $primary-white-color;
+        border-radius: 2px;
+        background-repeat: round;
+        
+      }
+      .modal-form-policy:checked + &:hover {
+        outline-color: $accent-color;
+      }
+    }
+  }
+  
+  .modal-bottom-accept {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: $second-color;
+  
+  }
+  
+  .bottom-policy {
+    color: $accent-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    &:focus {
+      outline-color: $accent-color;
+    }
+  }
+  
+  .visible {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+}
+
+
+
+
