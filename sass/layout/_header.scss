@@ -385,7 +385,7 @@
   header.header {
     z-index: 1;
     height: 80px;
-    min-width: 1200px;
+    width: 100%;
   }
     
   .nav {
@@ -422,7 +422,7 @@
   }
     
   .main-logo {
-    margin-right: 93px;
+    margin-right: 80px;
     
   }
     
@@ -437,7 +437,7 @@
     color: $accent-color;
     text-decoration: none;
     box-shadow: none;
-    margin-right: 93px;
+    margin-right: 80px;
     outline:none;
     &:hover,
     &:focus {
@@ -510,7 +510,7 @@
       align-items: center;
       margin: 0;
       padding: 0;
-      margin-left: 305px;
+      
       
     }
     

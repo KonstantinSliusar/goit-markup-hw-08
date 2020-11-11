@@ -798,7 +798,7 @@ section {
   header.header {
     z-index: 1;
     height: 80px;
-    min-width: 1200px;
+    width: 100%;
   }
   .nav {
     display: flex;
@@ -829,7 +829,7 @@ section {
     margin-right: 0;
   }
   .main-logo {
-    margin-right: 93px;
+    margin-right: 80px;
   }
   .logo {
     display: inline-block;
@@ -842,7 +842,7 @@ section {
     color: #2196F3;
     text-decoration: none;
     box-shadow: none;
-    margin-right: 93px;
+    margin-right: 80px;
     outline: none;
   }
   .logo:hover, .logo:focus {
@@ -903,7 +903,6 @@ section {
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-left: 305px;
   }
   .list-adress .main-adress {
     display: inline-flex;
