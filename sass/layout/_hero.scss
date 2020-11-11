@@ -35,6 +35,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
+    margin: 0 auto;
   }
   
   h1 {
@@ -53,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    min-width: 768px;
+    width: 100%;
     background: rgba(47, 48, 58, 0.4);
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/bg-tablet-min.jpg");
     background-repeat: no-repeat;
@@ -76,36 +77,36 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section-hero {
-    min-width: 1200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background:rgba(47, 48, 58, 0.4);
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/Img_team.jpg");
-    background-position: center;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
+// @media screen and (min-width: 1200px) {
+//   .section-hero {
+//     min-width: 1200px;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     background:rgba(47, 48, 58, 0.4);
+//     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/Img_team.jpg");
+//     background-position: center;
+//     background-size: cover;
+//     margin-left: auto;
+//     margin-right: auto;
         
       
-  }
+//   }
       
-  h1 {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.363;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $primary-white-color;
-    margin-top: 0;
-    margin-bottom: 40px;
+//   h1 {
+//     font-family: $main-font;
+//     font-style: normal;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.363;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: $primary-white-color;
+//     margin-top: 0;
+//     margin-bottom: 40px;
       
-  }
-}
+//   }
+// }
 
 
 

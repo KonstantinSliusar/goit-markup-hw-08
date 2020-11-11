@@ -1,6 +1,6 @@
 @media screen and (max-width: 479px) {
   .section-content {
-    width: 100%;
+    // width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     background: $text-decoration-color;
@@ -16,7 +16,7 @@
     margin-bottom: 0;
    }
    ul.list {
-    width: 100%;
+    // width: 100%;
     margin: 0;
     margin-top: 30px;
     padding: 0;
@@ -64,7 +64,7 @@
 }
 @media screen and (min-width: 480px) {
   .section-content {
-    
+    width: 450px;
     padding-top: 60px;
     padding-bottom: 60px;
     background: $text-decoration-color;
@@ -80,13 +80,14 @@
     margin-bottom: 0;
    }
    ul.list {
+    width: 100%;
     margin: 0;
     margin-top: 30px;
     padding: 0;
   }
   .people-pic {
     display: block;
-    width: 450px;
+    width: 100%;
   }
   .caption {
     text-align: center;
@@ -113,6 +114,7 @@
     margin-bottom: 0;
   }
   .card {
+    width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: $primary-white-color;
@@ -129,225 +131,164 @@
 
 
 
-@media screen and (min-width: 768px) {
-  .section-content {
-    min-width: 768px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: $text-decoration-color;
-   
-  }
-  .title {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 1.178;
-    letter-spacing: 0.03em;
-    color: $primary-text-color;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0;
-   }
-   ul.list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-top: 30px;
-    padding: 0;
-  }
-  .people-pic {
-    display: block;
-    width: 354px;
-  }
-  .caption {
-    text-align: center;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    color: $primary-text-color;
-    margin-top: 30px;
-    margin-bottom: 0;
-  }
-  .desc {
-    text-align: center;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    color: $second-color;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  .card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background: $primary-white-color;
-    text-align: center;
-    padding-bottom: 30px;
-    margin-top: 30px;
-    width: 354px;
-    &:nth-child(1) {
-      margin-top: 0;
-      margin-right: 30px;
-    }
-    &:nth-child(2) {
-      margin-top: 0;
-    }
-    &:nth-child(3) {
-      margin-right: 30px;
-    }
-   }
-  
-}
-
-
-@media screen and (min-width: 1200px){
-  .section-content {
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: $text-decoration-color;
-   
-  }
-  .title {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 1.178;
-    letter-spacing: 0.03em;
-    color: $primary-text-color;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0;
-   }
-   ul.list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-top: 30px;
-    padding: 0;
-  }
-  .people-pic {
-    display: block;
-    width: 270px;
-  }
-  .caption {
-    text-align: center;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    color: $primary-text-color;
-    margin-top: 30px;
-    margin-bottom: 0;
-  }
-  .desc {
-    text-align: center;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    color: $second-color;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  .card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background: $primary-white-color;
-    text-align: center;
-    padding-bottom: 30px;
-    margin-top: 30px;
-    width: 270px;
-    &:nth-child(1) {
-      margin-top: 0;
-      margin-right: 30px;
-    }
-    &:nth-child(2) {
-      margin-top: 0;
-      margin-right: 30px;
-    }
-    &:nth-child(3) {
-      margin-top: 0;
-      margin-right: 30px;
-    }
-   }
-   &:nth-child(4) {
-    margin-top: 0;
-    
-  }
-}
-
-
-
-
-
-
-// .section-content {
+// @media screen and (min-width: 768px) {
+//   .section-content {
+//     width: 100%;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
 //     background: $text-decoration-color;
-//     padding-top: 94px;
-//     padding-bottom: 94px;
+   
+//   }
+//   .title {
+//     font-weight: bold;
+//     font-size: 28px;
+//     line-height: 1.178;
+//     letter-spacing: 0.03em;
+//     color: $primary-text-color;
+//     text-align: center;
+//     margin-top: 0px;
+//     margin-bottom: 0;
+//    }
+//    ul.list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0;
+//     margin-top: 30px;
+//     padding: 0;
+//   }
+//   .people-pic {
+//     display: block;
+//     width: 100%;
+//   }
+//   .caption {
+//     text-align: center;
+//     font-family: $main-font;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.187;
+//     letter-spacing: 0.03em;
+//     color: $primary-text-color;
+//     margin-top: 30px;
+//     margin-bottom: 0;
+//   }
+//   .desc {
+//     text-align: center;
+//     font-family: $main-font;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 16px;
+//     line-height: 1.187;
+//     letter-spacing: 0.03em;
+//     color: $second-color;
+//     margin-top: 10px;
+//     margin-bottom: 0;
+//   }
+//   .card {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     background: $primary-white-color;
+//     text-align: center;
+//     padding-bottom: 30px;
+//     margin-top: 30px;
+//     min-width: 354px;
+//     &:nth-child(1) {
+//       margin-top: 0;
+//       margin-right: 20px;
+//     }
+//     &:nth-child(2) {
+//       margin-top: 0;
+//     }
+//     &:nth-child(3) {
+//       margin-right: 20px;
+//     }
+//    }
+  
+// }
+
+
+// @media screen and (min-width: 1200px){
+//   .section-content {
+//     width: 100%;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background: $text-decoration-color;
+   
+//   }
+//   .title {
+//     font-weight: bold;
+//     font-size: 28px;
+//     line-height: 1.178;
+//     letter-spacing: 0.03em;
+//     color: $primary-text-color;
+//     text-align: center;
+//     margin-top: 0px;
+//     margin-bottom: 0;
+//    }
+//    ul.list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0;
+//     margin-top: 30px;
+//     padding: 0;
+//   }
+//   .people-pic {
+//     display: block;
+//     width: 270px;
+//   }
+//   .caption {
+//     text-align: center;
+//     font-family: $main-font;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.187;
+//     letter-spacing: 0.03em;
+//     color: $primary-text-color;
+//     margin-top: 30px;
+//     margin-bottom: 0;
+//   }
+//   .desc {
+//     text-align: center;
+//     font-family: $main-font;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 16px;
+//     line-height: 1.187;
+//     letter-spacing: 0.03em;
+//     color: $second-color;
+//     margin-top: 10px;
+//     margin-bottom: 0;
+//   }
+//   .card {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     background: $primary-white-color;
+//     text-align: center;
+//     padding-bottom: 30px;
+//     margin-top: 30px;
+//     width: 270px;
+//     &:nth-child(1) {
+//       margin-top: 0;
+//       margin-right: 30px;
+//     }
+//     &:nth-child(2) {
+//       margin-top: 0;
+//       margin-right: 30px;
+//     }
+//     &:nth-child(3) {
+//       margin-top: 0;
+//       margin-right: 30px;
+//     }
+//    }
+//    &:nth-child(4) {
+//     margin-top: 0;
     
 //   }
-  
-  
-  // .title-content {
-  //   font-weight: bold;
-  //   font-size: 36px;
-  //   line-height: 1.166;
-  //   letter-spacing: 0.03em;
-  //   color: $primary-text-color;
-  //   text-align: center;
-  //   margin-top: 0px;
-  //   margin-bottom: 50px;
-  //  }
-  
-  //  .card {
-  //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  //   border-radius: 0px 0px 4px 4px;
-  //   background: $primary-white-color;
-  //   margin-right: 30px;
-  //   text-align: center;
-  //   padding-bottom: 30px;
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
-  //  }
-  
-  //  .people-pic {
-  //    display: block;
-  //  }
-  
-  //  .caption {
-  //    font-family: $main-font;
-  //    font-style: normal;
-  //    font-weight: 500;
-  //    font-size: 16px;
-  //    line-height: 1.187;
-  //    letter-spacing: 0.03em;
-  //    color: $primary-text-color;
-  //    margin-top: 30px;
-  //    margin-bottom: 0;
-  //  }
-  
-  //  .desc {
-  //   font-family: $main-font;
-  //   font-style: normal;
-  //   font-weight: normal;
-  //   font-size: 16px;
-  //   line-height: 1.187;
-  //   letter-spacing: 0.03em;
-  //   color: $second-color;
-  //   margin-bottom: 0;
-     
-  // }
-  
-  
-  
+// }
+
+
+
+
+
+
