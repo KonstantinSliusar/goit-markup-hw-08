@@ -112,7 +112,7 @@ section {
     width: 30px;
     height: 30px;
     padding: 0;
-    background-image: url("../images/svg/close(2).svg");
+    background-image: url("../svg/close(2).svg");
     border: none;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -234,7 +234,7 @@ section {
   }
   .modal-form-policy:checked + .modal-form-policy-label::before {
     background-color: #2196F3;
-    background-image: url("../images/svg/submit-icon.svg");
+    background-image: url("../svg/submit-icon.svg");
     border: 0.2px solid #FFFFFF;
     border-radius: 2px;
     background-repeat: round;
@@ -317,7 +317,7 @@ section {
     width: 30px;
     height: 30px;
     padding: 0;
-    background-image: url("../images/svg/close(2).svg");
+    background-image: url("../svg/close(2).svg");
     border: none;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -439,7 +439,7 @@ section {
   }
   .modal-form-policy:checked + .modal-form-policy-label::before {
     background-color: #2196F3;
-    background-image: url("../images/svg/submit-icon.svg");
+    background-image: url("../svg/submit-icon.svg");
     border: 0.2px solid #FFFFFF;
     border-radius: 2px;
     background-repeat: round;
